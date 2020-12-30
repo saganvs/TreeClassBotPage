@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   .text {
+	  display: table;
+      margin: 0 auto;
+   }
+   .text ol {
+      display: table;
+   .text ul {
+      display: table;
+	}
+  </style>
+</head>
+<body>
+<div class="text">
+<img title="Maple leaf" src="maple-leaf.png" alt="maple" width="300" height="300">
+<h1>Классификатор дерева по его листу (Telegram Bot)</h1>
+
+<p>
+GitHub: <a href="https://github.com/saganvs/tree_classification_bot">https://github.com/saganvs/tree_classification_bot</a>
+<br>
+Telegram bot: <a href="http://t.me/TreeClassBot">http://t.me/TreeClassBot</a>
+</p>
+
+<h2>Команды бота</h2>
+<p>
+<span style="color: #168acd">/start</span> - начать работу с ботом
+<br>
+<span style="color: #168acd">/help</span> - вывести список доступных команд
+<br>
+<span style="color: #168acd">/model</span> - вывести список доступных моделей для классификации
+<br>
+<span style="color: #168acd">/trees_list</span> - вывести список известных боту деревьев
+</p>
+
+<h2>Как пользоваться ботом</h2>
+<ol>
+  <li>Отправьте боту сообщение <span style="color: #168acd">/start</span></li>
+  <li>Выберите модель для классификации (или оставьте модель по умолчанию)</li>
+  <li>Отправьте боту фотографию с листом на светлом нейтральном фоне</li>
+  <li>Если классификация удалась, бот отправит сообщение с результатом</li>
+</ol> 
+
+<h2>Обученные модели</h2>
+<ol>
+  <li>
+    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_k-%D0%B1%D0%BB%D0%B8%D0%B6%D0%B0%D0%B9%D1%88%D0%B8%D1%85_%D1%81%D0%BE%D1%81%D0%B5%D0%B4%D0%B5%D0%B9">K-Nearest Neighbors</a>
+    <br>
+    sklearn: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html">KNeighborsClassifier</a>
+  </li>
+  
+  <li>
+    <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9">Decision Tree</a>
+	<br>
+	sklearn: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html">DecisionTreeClassifier</a>
+  </li>
+  
+  <li>
+    <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B1%D0%B0%D0%B9%D0%B5%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80">Gaussian Naive Bayes</a>
+	<br>
+	sklearn: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html">GaussianNB</a>
+  </li>
+  
+  <li>
+    <a href="https://ru.wikipedia.org/wiki/Random_forest">Random Forest</a>
+    <br>
+    sklearn: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">RandomForestClassifier</a>
+  </li>
+  
+  <li>
+    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D1%8B%D1%85_%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2">C-Support Vector Classification</a>
+    <br>
+    sklearn: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html">SVC</a>
+  </li>
+</ol>
+
+<h2>Как поставить бота себе</h2>
+<ol>
+  <li>
+    Установите необходимые библиотеки:
+	<br>
+	<ul>
+	  <li>
+	  python 3.8.6
+	  </li>
+	  <li>
+	  python-telegram-bot 13.1
+	  </li>
+	  <li>
+	  scikit-learn 0.22.2.post1
+	  </li>
+	  <li>
+	  scikit-image 0.18.1
+	  </li>
+      <li>
+	  numpy 1.19.4
+	  </li>
+	  <li>
+	  opencv-python 4.4.0.46
+	  </li>
+	</ul>
+  </li>
+  <li>
+    Скачайте бота из репозитория
+  </li>
+  <li>
+    В директории <b>telegram/RU/</b> создайте файл <b>t.txt</b> и запишите в него токен вашего бота
+  </li>
+  <li>
+    Через интерпретатор питона запустите файл <b>RUBot.py</b>
+  </li>
+</ol>
+</div>
+</body>
+</html>
